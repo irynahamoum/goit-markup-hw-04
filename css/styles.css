@@ -131,14 +131,22 @@ img {
   color: #404bbf;
 }
 
-.baner {
+.hero {
   width: 100%;
   height: 600px;
   padding: 188px 0;
   background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.baner-container {
+.hero-container {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -147,7 +155,7 @@ img {
   margin: 0 auto;
 }
 
-.baner-title {
+.hero-title {
   text-align: center;
   color: #fff;
   font-size: 56px;
@@ -158,7 +166,7 @@ img {
   max-width: 496px;
 }
 
-.baner-button {
+.hero-button {
   background: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
@@ -175,8 +183,8 @@ img {
   border: none;
 }
 
-.baner-button:hover,
-.baner-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
 
