@@ -133,6 +133,7 @@ img {
 
 .hero {
   width: 100%;
+  max-width: 1440рх;
   height: 600px;
   padding: 188px 0;
   background: #2e2f42;
@@ -228,7 +229,7 @@ img {
   margin-bottom: 8px;
 }
 
-.icon {
+.about-icon {
   height: 64px;
   width: 64px;
 }
@@ -278,6 +279,9 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .member-info {
@@ -300,6 +304,33 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-icons-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons {
+  width: calc((100% - 72px) / 4);
+  display: flex;
+  gap: 24px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .portfolio-container {
@@ -328,6 +359,12 @@ img {
   background: #fff;
   width: calc((100% - 48px) / 3);
 }
+
+/* portfolio-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+} */
 
 .portfolio-info {
   padding: 32px 16px;
@@ -358,19 +395,17 @@ img {
 
 .footer-container {
   background: #2e2f42;
-  display: block;
+  display: flex;
   height: 312px;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-/* 
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-} */
+
+.footer-dev-1 {
+  margin-right: 120px;
+  display: block;
+}
 
 .footer-logo {
   color: #4d5ae5;
@@ -395,4 +430,35 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   width: 264px;
+}
+
+.footer-dev-2 {
+  display: block;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-icons-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-social-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
 }
