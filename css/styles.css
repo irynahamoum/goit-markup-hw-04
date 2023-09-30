@@ -373,6 +373,10 @@ img {
   gap: 24px;
 }
 
+.social-icons:first-child {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social-icons,
 .social-icons::after,
 .social-icons::before {
@@ -401,7 +405,9 @@ img {
   gap: 48px 24px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.portfolio-card:first-child {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-card {
   background: #fff;
   width: calc((100% - 48px) / 3);
