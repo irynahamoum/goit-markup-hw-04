@@ -30,6 +30,7 @@ img {
 }
 
 .container {
+  width: 100%;
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -114,7 +115,7 @@ img {
   height: 4px;
   left: 0;
   bottom: -1px;
-  position: absolute;
+  position: absolute; 
   /* transition: width 0.3s; */
 }
 
@@ -127,6 +128,19 @@ img {
 .menu-list-item:hover .menu-list-link::after {
   width: 100%;
 }
+
+/* .link::after {
+  display: block;
+  content: '';
+  border-radius: 2px;
+  background: #404bbf;
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: -1px;
+  position: absolute;
+} */
+
 
 .address {
   font-style: normal;
@@ -159,9 +173,8 @@ img {
 }
 
 .hero {
-  width: 100%;
   max-width: 1440рх;
-  height: 600px;
+  /* height: 600px; */
   background: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -180,6 +193,7 @@ img {
 }
 
 .hero-title {
+  display: inline-block;
   text-align: center;
   color: #fff;
   font-size: 56px;
@@ -194,6 +208,7 @@ img {
   background: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
+  text-align: center;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -205,7 +220,16 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .hero-content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+} */
 
 .hero-button:hover,
 .hero-button:focus {
